@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Store</title>
+    <link href="/src/style.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet">
+  </head>
+  <body class="bg-gray-50">
+    <!-- Header -->
+    <header
+      class="sticky top-0 bg-white/80 backdrop-blur-sm border-b border-gray-100 shadow-sm z-50"
+    >
+      <div class="max-w-7xl mx-auto px-4 md:px-6 py-4">
+        <div
+          class="flex flex-col md:flex-row items-center justify-between gap-4"
+        >
+          <!-- Logo -->
+          <a href="/" class="text-2xl font-display font-bold text-blue-600"
+            >Store</a
+          >
+
+          <!-- Search -->
+          <div class="relative w-full md:w-80 lg:w-96">
+            <input
+              type="search"
+              id="site-search"
+              class="w-full py-2 px-4 pl-10 border border-gray-200 rounded-full bg-white/80 backdrop-blur-sm focus:outline-none focus:ring-2 focus:ring-blue-300"
+              placeholder="Search for products..."
+            />
+          </div>
+
+          <!-- Nav -->
+          <nav class="flex items-center gap-6">
+            <a href="/categories.html" class="text-gray-700 hover:text-blue-600"
+              >Categories</a
+            ><div class="flex items-center justify-center col-span-4"><h2 class="text-red-500 text-3xl">to-do</h2></div>
+            <a
+              href="/search-results.html"
+              class="text-gray-700 hover:text-blue-600"
+              >Deals</a
+            ><div class="flex items-center justify-center col-span-4"><h2 class="text-red-500 text-3xl">to-do</h2></div>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- Hero Section -->
+      <section
+        class="bg-gradient-to-r from-blue-400 to-blue-900 text-white py-20"
+      >
+        <div class="container-custom py-16 md:py-24">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+            <div class="animate-fade-in">
+              https://tailwindcss.com/docs/font-weight<h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-4">
+                Discover Nordic <br />Elegance
+              </h1>
+              <p class="text-lg md:text-xl opacity-90 mb-8">
+                Bring the beauty of Scandinavian design to your home with our
+                curated collection.
+              </p>
+              <div class="flex flex-wrap gap-4">
+                <a
+                  href="/categories.html"
+                  class="px-6 py-3 bg-white text-blue-600 hover:bg-gray-100 rounded-lg font-medium"
+                  >Shop Now</a
+                ><div class="flex items-center justify-center col-span-4"><h2 class="text-red-500 text-3xl">to-do</h2></div>
+                <a
+                  href="#featured"
+                  class="px-6 py-3 bg-blue-400/30 backdrop-blur-sm hover:bg-blue-400/40 rounded-lg font-medium text-white"
+                  >Explore Featured</a
+                ><div class="flex items-center justify-center col-span-4"><h2 class="text-red-500 text-3xl">to-do</h2></div>
+              </div>
+            </div>
+            <div class="relative animate-slide-up">
+              <div
+                class="aspect-video rounded-lg overflow-hidden bg-blue-300/30 backdrop-blur-sm shadow-xl"
+              >
+                <!-- Hero Image Placeholder -->
+                <div class="flex items-center justify-center min-w-fit" id="featured-container">
+                
+                </div>
+              </div>
+              <div
+                class="absolute -bottom-6 -right-6 bg-white/90 backdrop-blur-sm p-4 rounded-lg shadow-lg"
+              >
+                <p id="featured-product-name" class="text-blue-600 font-semibold">New Collection</p>
+                <p class="text-sm text-slate-600">Just arrived</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Categories Section -->
+      <section class="py-20 bg-white" id="categories-section">
+        <div class="container-custom">
+          <h2 class="section-title text-center">Shop by Category</h2>
+          <div
+            class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 mt-8"
+          ><div class="flex items-center justify-center col-span-4"><h2 class="text-red-500 text-3xl">to-do</h2></div></div>
+          <div class="text-center mt-10">
+            <a href="/categories.html" class="btn btn-outline"
+              >View All Categories</a
+            >
+            <div class="flex items-center justify-center col-span-4"><h2 class="text-red-500 text-3xl">to-do</h2></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Featured Products Section -->
+      <section class="py-20 bg-gray-50" id="featured">
+        <div class="max-w-7xl mx-auto px-4 md:px-6">
+          <h2 class="section-title text-center">Love Your Linen</h2>
+          <div
+            id="browse-container"
+            class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-8"
+          >
+            <!-- Product cards will be populated via API -->
+            <!-- Product Card Placeholder 1 -->
+      
+          </div>
+        </div>
+      </section>
+
+      <!-- New Arrivals Banner -->
+      <section class="py-20 bg-gradient-to-r from-blue-400 to-blue-900 text-white">
+        <div class="container-custom">
+          <div
+            class="flex flex-col md:flex-row items-center justify-between gap-8"
+          >
+            <div>
+              <h2 class="text-3xl md:text-4xl font-bold mb-4">New Arrivals</h2>
+              <p class="text-white/90 mb-6 max-w-md">
+                Discover our latest collection of inspired products to enhance
+                your living space.
+              </p>
+              <a
+                href="#"
+                class="px-6 py-3 bg-white text-blue-600 hover:bg-gray-100 rounded-lg font-medium"
+                >Shop Collection</a
+              >
+            </div>
+            <div class="bg-blue-500/50 border border-blue-400 backdrop-blur-sm p-8 rounded-lg">
+              <div class="text-center">
+                <p class="text-xl mb-2">Limited Time Offer</p>
+                <p class="text-3xl font-bold mb-4">20% OFF</p>
+                <p class="text-sm text-white/80">Use code: NORDIC20</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white mt-16">
+      <div class="max-w-7xl mx-auto px-4 md:px-6 py-12">
+        <div class="text-center">
+          <p class="text-gray-400">&copy; 2025 Store. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
