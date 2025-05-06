@@ -32,3 +32,18 @@ export async function fetchFeaturedProducts(itemIds) {
   console.log("Featured Product:", response.response.results);
   return response.response.results;
 }
+
+//todo Tratar autocomplete
+export async function fetchAutocompleteQuery(query) {
+  const response = await constructorio.autocomplete.getAutocompleteResults(
+    query,
+    {
+      resultsPerSection: {
+        Products: 5,
+        "Search Suggestions": 10,
+      },
+      filters: {},
+    }
+  );
+  console.log("Autocomplete:", response);
+}

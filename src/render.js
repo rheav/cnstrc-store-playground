@@ -28,3 +28,5 @@ export function renderFeaturedProduct(products, container) {
     </div>
   `;
 }
+
+//todo Tratar autocomplete
